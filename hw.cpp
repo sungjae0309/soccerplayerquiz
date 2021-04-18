@@ -18,15 +18,15 @@ void mousetCallback(ObjectID object, int x, int y, MouseAction action) {
 		startTimer(timer);
 		showMessage("45초 안에 어떤 선수들인지 맞춰보세요(선수들의 시그니처 세레머니입니다)");
 
-		sshadow = createObject("hwimages/sshadow.png");
+		sshadow = createObject("sshadow.png");
 		locateObject(sshadow, scene2, 100, 300);
 		showObject(sshadow);
 
-		dshadow = createObject("hwimages/dshadow.png");
+		dshadow = createObject("dshadow.png");
 		locateObject(dshadow, scene2, 600, 300);
 		showObject(dshadow);
 
-		Lshadow = createObject("hwimages/Lshadow.png");
+		Lshadow = createObject("Lshadow.png");
 		locateObject(Lshadow, scene2, 1000, 300);
 		showObject(Lshadow);
 	}
@@ -34,15 +34,15 @@ void mousetCallback(ObjectID object, int x, int y, MouseAction action) {
 
 void timerCallback(TimerID timer) {
 	if (timer == timer) {
-		sonny = createObject("hwimages/sonny.png");
+		sonny = createObject("sonny.png");
 		locateObject(sonny, scene2, 100, 300);
 		showObject(sonny);
 
-		dybala = createObject("hwimages/dybala.png");
+		dybala = createObject("dybala.png");
 		locateObject(dybala, scene2, 600, 300);
 		showObject(dybala);
 
-		lingard = createObject("hwimages/lingard.png");
+		lingard = createObject("lingard.png");
 		locateObject(lingard, scene2, 1000, 300);
 		showObject(lingard);
 
@@ -62,45 +62,45 @@ int main()
 
 
 
-	scene = createScene("scene", "hwimages/bbgd.png");
-	scene2 = createScene("scene2", "hwimages/white.png");
+	scene = createScene("scene", "bbgd.png");
+	scene2 = createScene("scene2", "white.png");
 
 
 	setMouseCallback(mousetCallback);
 	setTimerCallback(timerCallback);
 
-	startButton = createObject("hwimages/start.png");
+	startButton = createObject("start.png");
 	locateObject(startButton, scene, 780, 360);
 	showObject(startButton);
 
-	endButton = createObject("hwimages/end.png");
+	endButton = createObject("end.png");
 	locateObject(endButton, scene, 780, 315);
 	showObject(endButton);
 
-	sshadow = createObject("hwimages/sshadow.png");
+	sshadow = createObject("sshadow.png");
 	locateObject(sshadow, scene2, 100, 300);
 	showObject(sshadow);
 
-	dshadow = createObject("hwimages/dshadow.png");
+	dshadow = createObject("dshadow.png");
 	locateObject(dshadow, scene2, 600, 300);
 	showObject(dshadow);
 
-	Lshadow = createObject("hwimages/Lshadow.png");
+	Lshadow = createObject("Lshadow.png");
 	locateObject(Lshadow, scene2, 1000, 300);
 	showObject(Lshadow);
 
 	timer = createTimer(45.0f); 
 	showTimer(timer);
 
-	sonny = createObject("hwimages/sonny.png");
+	sonny = createObject("sonny.png");
 	locateObject(sonny, scene2, 100, 300);
 	showObject(sonny);
 
-	dybala = createObject("hwimages/dybala.png");
+	dybala = createObject("dybala.png");
 	locateObject(dybala, scene2, 600, 300);
 	showObject(dybala);
 
-	lingard = createObject("hwimages/lingard.png");
+	lingard = createObject("lingard.png");
 	locateObject(lingard, scene2, 1000, 300);
 	showObject(lingard);
 	startGame(scene);
